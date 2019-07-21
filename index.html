@@ -46,17 +46,17 @@
 				<div class="line line1"></div>
 				<div class="parallelogram parallelogram1"></div>
 				<div class="main-menu">
-					<a href="#" class="active">
+					<a href="#" id="education-program" class="active">
 						<span class="small-text">CHƯƠNG TRÌNH</span>
 						<span>ĐÀO TẠO ĐẶC BIỆT</span>
 					</a>
-					<a href="#">
+					<a href="#" id="choose-vlu">
 						<span class="small-text">TẠI SAO CHỌN</span>
 						<span>VLU</span>
 					</a>
-					<a href="#">CHUYÊN NGÀNH</a>
+					<a href="#" id="specialized">CHUYÊN NGÀNH</a>
 					<a href="#" id="register">ĐĂNG KÝ</a>
-					<a href="#">LIÊN HỆ</a>
+					<a href="#" id="contact">LIÊN HỆ</a>
 				</div>
 				<div class="line line2"></div>
 				<div class="parallelogram parallelogram2"></div>
@@ -76,7 +76,7 @@
 		</div>
 	</section>
 
-	<section class="content">
+	<section class="content" id="education-program-detail">
 		<div class="content-container title">
 			Chương trình <span> ĐÀO TẠO ĐẶC BIỆT </span>
 		</div>
@@ -109,7 +109,7 @@
 		</div>
 	</section>
 
-	<section class="content-education">
+	<section class="content-education" id="choose-vlu-detail">
 		<div class="title">
 			Chương trình đào tạo đặc biệt tạo điều kiện để bạn trở thành công dân toàn cầu & học thực tế, làm thực tế!
 		</div>
@@ -314,7 +314,7 @@
 		</div>
 	</section>
 
-	<section class="detail-education">
+	<section class="detail-education" id="specializedDetail">
 		<div class="wrap-detail-education">
 			<ul class="nav">
 				<li>
@@ -633,7 +633,7 @@
 		</div>
 	</section>
 
-	<section class="footer">
+	<section class="footer" id="contactDetail">
 		<div class="parallelogram parallelogram-footer"></div>
 		<div class="main">
 			<div class="title">
@@ -759,6 +759,26 @@
 		$("#register").click(function () {
 			$('html, body').animate({
 				scrollTop: $("#formregister").offset().top
+			}, 2000);
+		});
+		$("#contact").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#contactDetail").offset().top
+			}, 2000);
+		});
+		$("#specialized").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#specializedDetail").offset().top
+			}, 2000);
+		});
+		$("#choose-vlu").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#choose-vlu-detail").offset().top
+			}, 2000);
+		});
+		$("#education-program").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#education-program-detail").offset().top
 			}, 2000);
 		});
 		$("#scrolltop").click(function () {
