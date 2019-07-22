@@ -635,7 +635,7 @@
 						<img src="./images/Vector Smart Object.png">
 					</a>
 				</div>
-				<div class="sign-up">
+				<div class="sign-up" id="btn-signup-online">
 					ĐĂNG KÝ TRỰC TUYẾN
 				</div>
 
@@ -768,6 +768,11 @@
 
 	<script type="text/javascript">
 		$("#register").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#formregister").offset().top
+			}, 2000);
+		});
+		$("#btn-signup-online").click(function () {
 			$('html, body').animate({
 				scrollTop: $("#formregister").offset().top
 			}, 2000);
