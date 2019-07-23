@@ -53,6 +53,7 @@
 }
 .main-menu a {
     font-family:open sans;
+    transition: all 1s ease-in-out;
     color:#ffffff;
     position: relative;
     display:flex;
@@ -69,6 +70,7 @@
 }
 .main-menu a:after {
     border-left: 3px solid #434343;
+    transition: all 1s ease-in-out;
     background: #a1a0a0;
 	position: absolute;
 	content: '';
@@ -81,6 +83,9 @@
 }
 .main-menu a:first-child:after {
     border-left: none;
+}
+.main-menu a:hover {
+    padding-left: 15px;
 }
 .main-menu a:hover:after {
     background: #b80000;
