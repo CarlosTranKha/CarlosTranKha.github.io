@@ -279,12 +279,10 @@
 .item-education .item .content{
     margin: 22px;
     font-size: 15px;
+    text-align: justify;
 }
 .item-education .item-right .title {
     left: 42%;
-}
-.item-education .item-right .content {
-    text-align: right;
 }
 .about-education {
     display: flex;
@@ -651,9 +649,10 @@
     margin: 30px 0px;
 }
 .footer .content {
-    width: 65%;
+    width: 75%;
     flex-direction: row;
     font-size: 14px;
+    align-items: unset;
 }
 .footer .content ul {
     list-style-type: none;
