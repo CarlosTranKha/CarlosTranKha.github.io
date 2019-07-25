@@ -649,7 +649,7 @@
     margin: 30px 0px;
 }
 .footer .content {
-    width: 75%;
+    width: 80%;
     flex-direction: row;
     font-size: 14px;
     align-items: unset;
@@ -682,7 +682,8 @@
     width: 40%;
 }
 .footer .content .address {
-    width: 60%;
+    width: 55%;
+    margin-left: 5%;
 }
 .footer .parallelogram-footer {
     height: 8px;
