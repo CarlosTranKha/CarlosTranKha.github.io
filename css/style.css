@@ -394,8 +394,14 @@
 .wrap-student .title b {
     margin-right: 5px;
 }
+.wrap-student .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit !important;
+}
 .wrap-student .image-student,.wrap-student .image-student img  {
-    background-color: #eee;
     width: 200px;
     height: 200px;
     margin-top: 20px;
@@ -416,7 +422,8 @@
     position: absolute;
     z-index: -1;
     color: #eee;
-    left: 38%;
+    left: 28%;
+    top: 0;
 }
 .wrap-student .quote i {
     font-size: 80px;
@@ -822,6 +829,7 @@
     }
     .phone-support {
         left: 20px;
+        top: 85%;
     }
     .footer .content {
         width: 90%;

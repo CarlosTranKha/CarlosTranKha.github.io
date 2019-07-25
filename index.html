@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
 	<link rel="stylesheet" href="./css/phonering.min.css">
 	<link rel="stylesheet" href="./css/style.min.css">
 
@@ -23,6 +25,7 @@
 		crossorigin="anonymous"></script>
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<!-- Email.js support send mail send email through web browser -->
 	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
@@ -306,27 +309,67 @@
 
 	<section class="student">
 		<div class="wrap-student">
-			<div class="title">
-				<span><b>Sinh viên hiện tại</b>của</span>
-				<span>Chương trình đào tạo đặc biệt nói gì ?</span>
-			</div>
-			<div class="image-student" data-aos="zoom-in-up" data-aos-duration="3000">
-				<img src="./images/sv_noigi-min.png" alt="Hình">
-			</div>
-			<div class="quote">
-				<i class="fas fa-quote-left"></i>
-			</div>
-			<div class="content" data-aos="fade-up" data-aos-duration="3000">
-				<div class="student-content">
-					“Chương trình mô phỏng kế toán giúp sinh viên làm quen với hóa đơn chứng từ, hiểu được mối liên hệ
-					giữa các phần hành kế toán riêng biệt, làm quen với báo cáo tài chính. Những kiến thức này giúp sinh
-					viên thích nghi nhanh hơn với công việc lúc mới ra trường, tự tin hơn khi phỏng vấn chọn việc.”
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="title">
+							<span><b>Sinh viên hiện tại</b>của</span>
+							<span>Chương trình đào tạo đặc biệt nói gì ?</span>
+						</div>
+						<div class="image-student" data-aos="zoom-in-up" data-aos-duration="3000">
+							<img src="./images/sv_noigi-min.png" alt="Hình">
+						</div>
+						<div class="quote">
+							<i class="fas fa-quote-left"></i>
+						</div>
+						<div class="content" data-aos="fade-up" data-aos-duration="3000">
+							<div class="student-content">
+								“Chương trình mô phỏng kế toán giúp sinh viên làm quen với hóa đơn chứng từ, hiểu được
+								mối liên hệ
+								giữa các phần hành kế toán riêng biệt, làm quen với báo cáo tài chính. Những kiến thức
+								này giúp sinh
+								viên thích nghi nhanh hơn với công việc lúc mới ra trường, tự tin hơn khi phỏng vấn chọn
+								việc.”
+							</div>
+							<div class="infor-student">
+								- Nguyễn Sỹ Hà, CSV khoá 13 -
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="title">
+							<span><b>Sinh viên hiện tại</b>của</span>
+							<span>Chương trình đào tạo đặc biệt nói gì ?</span>
+						</div>
+						<div class="image-student" data-aos="zoom-in-up" data-aos-duration="3000">
+							<img src="./images/sv_noigi-min.png" alt="Hình">
+						</div>
+						<div class="quote">
+							<i class="fas fa-quote-left"></i>
+						</div>
+						<div class="content" data-aos="fade-up" data-aos-duration="3000">
+							<div class="student-content">
+								“Chương trình mô phỏng kế toán giúp sinh viên làm quen với hóa đơn chứng từ, hiểu được
+								mối liên hệ
+								giữa các phần hành kế toán riêng biệt, làm quen với báo cáo tài chính. Những kiến thức
+								này giúp sinh
+								viên thích nghi nhanh hơn với công việc lúc mới ra trường, tự tin hơn khi phỏng vấn chọn
+								việc.”
+							</div>
+							<div class="infor-student">
+								- Nguyễn ABC, CSV khoá ABC -
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
 				</div>
-				<div class="infor-student">
-					- Nguyễn Sỹ Hà, CSV khoá 13 -
-				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
-			<div class="line"></div>
+
 		</div>
 	</section>
 
@@ -687,18 +730,19 @@
 						style="left: -50px; bottom: 150px; position: fixed;">
 						<div class="phonering-alo-ph-circle"></div>
 						<div class="phonering-alo-ph-circle-fill"></div>
-						<a href="tel:+84123456789"></a>
+						<a href="tel:+84983807481"></a>
 						<div class="phonering-alo-ph-img-circle">
-							<a href="tel:+84123456789"></a>
-							<a href="tel:+84123456789" class="pps-btn-img " title="Liên hệ">
+							<a href="tel:+84983807481"></a>
+							<a href="tel:+84983807481" class="pps-btn-img " title="Liên hệ">
 								<img src="https://i.imgur.com/v8TniL3.png" alt="Liên hệ" width="50"
 									onmouseover="this.src='https://i.imgur.com/v8TniL3.png';"
 									onmouseout="this.src='https://i.imgur.com/v8TniL3.png';">
 							</a>
 						</div>
 					</div>
-					<a href="tel:+84123456789">
-						<span style="left: 90px; bottom: 30px; position: fixed; background-color: #d90000; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 20px; z-index: 10000;">
+					<a href="tel:+84983807481">
+						<span
+							style="left: 90px; bottom: 30px; position: fixed; background-color: #d90000; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 20px; z-index: 10000;">
 							<strong>0983807481</strong>
 						</span>
 					</a>
@@ -976,6 +1020,19 @@
 	</script>
 	<script>
 		AOS.init();
+	</script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+		})
 	</script>
 </body>
 
