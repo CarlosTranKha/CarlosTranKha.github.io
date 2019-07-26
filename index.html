@@ -51,7 +51,7 @@
 	</div>
 	<section class="header">
 		<div class="banner">
-			<img src="./images/output-min.jpg">
+			<img src="./images/new_bg_2103x1368.jpg">
 		</div>
 		<div class="wrap-header">
 			<div class="header-container">
@@ -82,22 +82,13 @@
 				<div class="line line2"></div>
 				<div class="parallelogram parallelogram2"></div>
 			</div>
-			<div class="header-container title">
-				<span class="title1">Hãy trở thành công dân toàn cầu</span>
-				<span class="title2">CÙNG VLU</span>
-			</div>
-			<div class="header-container">
-				<div class="parallelogram btn-next">
-					<i class="fas fa-chevron-left"></i>
-				</div>
-				<div class="parallelogram btn-right">
-					<i class="fas fa-chevron-right"></i>
-				</div>
-			</div>
+			<video style="display: flex; width: 100%; margin-top: -46px;" loop autoplay muted id="myvideo">
+				<source src="./images/VL.mp4" type="video/mp4">
+			</video>
 		</div>
 	</section>
 
-	<section class="content" id="education-program-detail" data-aos="zoom-in" data-aos-duration="3000">
+	<section class="content margin-md" id="education-program-detail" data-aos="zoom-in" data-aos-duration="3000">
 		<div class="content-container title">
 			Chương trình <span> ĐÀO TẠO ĐẶC BIỆT </span>
 		</div>
@@ -903,6 +894,15 @@
 			},
 
 		})
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var video = document.getElementById("myvideo");
+			if ($(document).width()< 1200) {
+				video.setAttribute("controls","controls");  
+				video.removeAttribute("autoplay");
+			}
+		});
 	</script>
 </body>
 
