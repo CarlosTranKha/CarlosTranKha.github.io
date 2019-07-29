@@ -536,6 +536,7 @@
 }
 .form-register .col-md-12 {
     margin-top: 20px;
+    flex: auto !important;
 }
 .form-register input ,.form-register select{
     width: 100%;
@@ -544,6 +545,14 @@
     color: #303ab2;
 }
 .form-register input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #1b4ca0;
+    padding-left: 10px;
+}
+.form-register input::-moz-input-placeholder { /* Firefox 19+ */
+    color: #1b4ca0;
+    padding-left: 10px;
+}
+.form-register input:-moz-input-placeholder { /* Firefox 18- */
     color: #1b4ca0;
     padding-left: 10px;
 }
