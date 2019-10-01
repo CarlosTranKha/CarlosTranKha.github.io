@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext,vietnamese");
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #4e4e50;
+  font-weight: 400;
+}
+
+.slick-slider .item .inner {
+  /* padding: 0 11px;
+            @media (min-width: 1400px){
+                padding: 0 22px;
+            }
+            img{
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            } */
+}
+
+.slick-slider .item .inner p {
+  color: #cc8355;
+  margin-top: 15px;
+}
+
+.slick-slider .slick-arrow {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  width: 47px;
+  height: 71px;
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  z-index: 100;
+}
+
+.slick-slider .slick-arrow:focus {
+  outline-style: none;
+}
+
+.slick-slider .slick-arrow.slick-prev {
+  background: rgba(231, 214, 186, 0.77) url("../images/arrow-left.png") center center no-repeat;
+  background-size: 70% 70%;
+  left: 0;
+}
+
+.slick-slider .slick-arrow.slick-next {
+  background: rgba(231, 214, 186, 0.77) url("../images/arrow-right.png") center center no-repeat;
+  background-size: 70% 70%;
+  right: 0;
+}
+
+header .hero #project {
+  background-image: url("../images/bg-main-2.jpg");
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+header .hero #project .inner {
+  padding-top: 56.25%;
+  /* height/width of image */
+  display: block;
+  height: 0;
+}
+
+header .top {
+  padding-top: 15px;
+  background: url("../images/mask.jpg") bottom center no-repeat;
+  background-size: 100% 300%;
+}
+
+header .top .nav a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .top .nav a:hover, header .top .nav a.active {
+  color: #464646;
+}
+
+@media (min-width: 1100px) {
+  header .top {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  header .top img {
+    width: 170px;
+  }
+  header .top .nav {
+    margin-top: 20px;
+  }
+  header .top .nav a {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1700px) {
+  header .top img {
+    width: 212px;
+  }
+}
+
+.content-1 {
+  padding-top: 50px;
+}
+
+@media (min-width: 1700px) {
+  .content-1 {
+    padding-top: 100px;
+  }
+}
+
+.content-1 h2 {
+  color: #f2b085;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.content-1 p {
+  line-height: 1.8;
+}
+
+.content-1 small {
+  color: #acacac;
+  font-size: 16px;
+  display: block;
+  margin-top: 20px;
+}
+
+.content-2 {
+  padding: 90px 15px 70px 15px;
+}
+
+.content-2 .arrow {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.content-2 .info {
+  max-width: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 1700px) {
+  .content-2 .info {
+    max-width: 670px;
+  }
+}
+
+.content-2 .info p {
+  margin-top: 30px;
+}
+
+.content-2 .info h5 {
+  text-transform: uppercase;
+  color: #cc8355;
+  margin-bottom: 20px;
+}
+
+.content-2 .pics {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .content-2 .pics {
+    margin-top: -150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content-2 .pics {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.content-3 {
+  background: url("../images/bg2.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 0 40px 0;
+}
+
+.content-3 p {
+  color: #af734d;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.content-3 form {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.content-3 form .form-control {
+  margin-top: 20px;
+  padding-left: 60px;
+  background: transparent;
+  border-color: #af734d;
+  border-radius: 10px;
+}
+
+.content-3 form .form-control::-webkit-input-placeholder {
+  color: #af734d;
+  font-style: italic;
+}
+
+.content-3 form .form-control:-moz-placeholder {
+  color: #af734d;
+  font-style: italic;
+}
+
+.content-3 form .form-control::-moz-placeholder {
+  color: #af734d;
+  font-style: italic;
+}
+
+.content-3 form .form-control:-ms-input-placeholder {
+  color: #af734d;
+  font-style: italic;
+}
+
+.content-3 form .btn {
+  position: relative;
+  padding-top: 70px;
+  margin-top: 30px;
+}
+
+.content-3 form .btn:hover {
+  opacity: 0.8;
+}
+
+.content-3 form .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  background: #aa6b43;
+  width: 2px;
+  height: 55px;
+}
+
+@media (min-width: 1200px) {
+  .content-4 .bg {
+    background: url("../images/rec.png") top center no-repeat;
+    background-size: 100%;
+  }
+}
+
+.content-4 p {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+footer {
+  color: #cc8355;
+  background: #fdf3ec;
+  padding: 60px 0 40px 0;
+  margin-top: 60px;
+}
+
+footer p a {
+  color: #cc8355;
+  text-decoration: none;
+}
+
+footer p a:hover, footer p a:focus {
+  color: #cc8355;
+  text-decoration: none;
+}
+
+footer .text-center a {
+  display: inline-block;
+  background: #f2b085;
+  color: #fff;
+  border-radius: 20px 0 20px 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 24px;
+}
+
+footer .text-center a:hover, footer .text-center a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .text-center small {
+  display: block;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
