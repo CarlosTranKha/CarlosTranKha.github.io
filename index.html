@@ -15,6 +15,11 @@
 
   <title>Capella - Gallery Hall</title>
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_A3MTF2MMzd6nnG1kbxxck");
+    })();
+  </script>
 </head>
 
 <body>
@@ -89,7 +94,7 @@
             <img src="images/tagline3.png" class="img-fluid" alt="">
             <p>Bắt đầu hành trình hạnh phúc trăm năm với ưu đãi đặc biệt dành cho các cặp đôi nhanh tay nhất</p>
           </div>
-          <form action="" class="text-center">
+          <div class="text-center form">
             <input class="form-control" type="text" placeholder="Họ và Tên" name="name" id="name">
             <input class="form-control" type="tel" placeholder="Điện thoại" name="tel" id="phone">
             <input class="form-control" type="email" placeholder="Email" name="email" id="email">
@@ -99,7 +104,7 @@
             <button class="btn btn-link" onclick="sendMail()">
               <img src="images/dat-tiec-ngay.png" alt="">
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -290,12 +295,6 @@
   </script>
 
   <script type="text/javascript">
-    (function () {
-      emailjs.init("user_mWL1ojXFBUONAFrBKNRUg");
-    })();
-  </script>
-
-  <script type="text/javascript">
     function sendMail() {
       var name = document.getElementById("name").value;
       var phone = document.getElementById("phone").value;
@@ -318,15 +317,16 @@
         alert("Vui lòng nhập thời gian dự kiến tổ chức tiệc cưới");
       } else if (notify) {
         alert("Vui lòng kiểm tra lại email và số điện thoại của bạn");
-      } else
-        emailjs.send('gmail', 'template_PdNCBcMB', templateParams)
+      } else {
+        emailjs.send('gmail', 'template_m4Wx8CuC', templateParams)
           .then(function (response) {
             alert("Bạn đã đăng ký thành công, chúng tôi sẽ sớm liên hệ với bạn");
-            location.reload();
+            // location.reload();
           }, function (error) {
             alert("bạn đã đăng ký thất bại, vui lòng thử lại");
-            location.reload();
+            // location.reload();
           });
+      }
     }
   </script>
 </body>

@@ -205,12 +205,12 @@ header .top .nav a:hover, header .top .nav a.active {
   margin-bottom: 30px;
 }
 
-.content-3 form {
+.content-3 .form {
   max-width: 980px;
   margin: 0 auto;
 }
 
-.content-3 form .form-control {
+.content-3 .form .form-control {
   margin-top: 20px;
   padding-left: 60px;
   background: transparent;
@@ -218,37 +218,37 @@ header .top .nav a:hover, header .top .nav a.active {
   border-radius: 10px;
 }
 
-.content-3 form .form-control::-webkit-input-placeholder {
+.content-3 .form .form-control::-webkit-input-placeholder {
   color: #af734d;
   font-style: italic;
 }
 
-.content-3 form .form-control:-moz-placeholder {
+.content-3 .form .form-control:-moz-placeholder {
   color: #af734d;
   font-style: italic;
 }
 
-.content-3 form .form-control::-moz-placeholder {
+.content-3 .form .form-control::-moz-placeholder {
   color: #af734d;
   font-style: italic;
 }
 
-.content-3 form .form-control:-ms-input-placeholder {
+.content-3 .form .form-control:-ms-input-placeholder {
   color: #af734d;
   font-style: italic;
 }
 
-.content-3 form .btn {
+.content-3 .form .btn {
   position: relative;
   padding-top: 70px;
   margin-top: 30px;
 }
 
-.content-3 form .btn:hover {
+.content-3 .form .btn:hover {
   opacity: 0.8;
 }
 
-.content-3 form .btn::before {
+.content-3 .form .btn::before {
   content: "";
   position: absolute;
   top: 0;
