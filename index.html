@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <title>Capella - Gallery Hall</title>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 </head>
 
 <body>
@@ -50,9 +51,7 @@
         <div class="col-12 text-center">
           <img src="images/tagline1.png" class="img-fluid" alt="">
           <h2><strong>GIẢM 1 TRIỆU VNĐ </strong>mỗi bàn tiệc</h2>
-          <p>Khoảnh khắc cô gái khoác lên mình chiếc váy cưới lộng lẫy, sánh duyên bên người đàn ông yêu thương sẽ càng
-            thiêng liêng và thăng hoa hơn nữa khi được điểm tô những màu sắc rực rỡ của hoa lá cùng những làn gió tươi
-            mới. <br>
+          <p>
             Hãy biến ngày đặc biệt nhất trong đời bạn thành một ngày đáng nhớ với tiệc cưới lãng mạn, tinh tế như một
             giấc mơ ngọt ngào. <br>
             Hãy để mỗi khoảnh khắc trong buổi tiệc đều trở nên đẹp đẽ hơn những gì bạn tưởng tượng. <br>
@@ -94,9 +93,10 @@
             <input class="form-control" type="text" placeholder="Họ và Tên" name="name" id="name">
             <input class="form-control" type="tel" placeholder="Điện thoại" name="tel" id="phone">
             <input class="form-control" type="email" placeholder="Email" name="email" id="email">
-            <input class="form-control" type="text" placeholder="Thời gian dự kiến tổ chức tiệc cưới" name="datetime" id="note">
+            <input class="form-control" type="text" placeholder="Thời gian dự kiến tổ chức tiệc cưới" name="datetime"
+              id="note">
             <div class="notify" id="notify"></div>
-            <button class="btn btn-link">
+            <button class="btn btn-link" onclick="sendMail()">
               <img src="images/dat-tiec-ngay.png" alt="">
             </button>
           </form>
@@ -138,8 +138,8 @@
     </div>
     <div class="item text-center">
       <div class="inner">
-        <img src="images/img3.jpg" alt="" />
-        <p>Rustic</p>
+        <img src="images/santorini_6.jpg" alt="" />
+        <p>Santorini</p>
       </div>
     </div>
     <div class="item text-center">
@@ -165,7 +165,7 @@
           </p>
           <hr>
           <p>
-            Hotline: <a href="tel:0971047788">0971 04 77 88</a> <br>
+            Hotline: <a href="tel:0971047788">0972 04 77 88</a> <br>
             Email: <a href="mailto:contact@capellagallery.com">contact@capellagallery.com</a> <br>
             Website: <a href="https://capellagallery.com/" target="_blank">www.capellagallery.com</a>
           </p>
@@ -253,42 +253,82 @@
     });
   </script>
   <script type="text/javascript">
-		$(document).ready(function () {
-			var phone = $("#phone");
-			var email = $("#email");
-			var validatePhone = true;
-			var validateEmail = true;
-			phone.keyup(function () {
-				var valuephone = phone.val();
-				if (valuephone.toString().length < 10 || valuephone.toString().length > 11) {
-					$("#notify").text('Vui lòng nhập chính xác số điện thoại');
-					validatePhone = false;
-				} else {
-					validatePhone = true;
-					if (validateEmail) {
-						$("#notify").text('');
-					} else {
-						$("#notify").text('Vui lòng nhập chính xác email');
-					}
-				}
-			});
-			email.keyup(function () {
-				var valueEmail = email.val().toString();
-				if (valueEmail.includes("@")) {
-					validateEmail = true;
-					if (validatePhone) {
-						$("#notify").text('');
-					} else {
-						$("#notify").text('Vui lòng nhập chính xác số điện thoại');
-					}
-				} else {
-					$("#notify").text('Vui lòng nhập chính xác email');
-					validateEmail = false;
-				}
-			});
-		});
+    $(document).ready(function () {
+      var phone = $("#phone");
+      var email = $("#email");
+      var validatePhone = true;
+      var validateEmail = true;
+      phone.keyup(function () {
+        var valuephone = phone.val();
+        if (valuephone.toString().length < 10 || valuephone.toString().length > 11) {
+          $("#notify").text('Vui lòng nhập chính xác số điện thoại');
+          validatePhone = false;
+        } else {
+          validatePhone = true;
+          if (validateEmail) {
+            $("#notify").text('');
+          } else {
+            $("#notify").text('Vui lòng nhập chính xác email');
+          }
+        }
+      });
+      email.keyup(function () {
+        var valueEmail = email.val().toString();
+        if (valueEmail.includes("@")) {
+          validateEmail = true;
+          if (validatePhone) {
+            $("#notify").text('');
+          } else {
+            $("#notify").text('Vui lòng nhập chính xác số điện thoại');
+          }
+        } else {
+          $("#notify").text('Vui lòng nhập chính xác email');
+          validateEmail = false;
+        }
+      });
+    });
   </script>
-  
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_mWL1ojXFBUONAFrBKNRUg");
+    })();
+  </script>
+
+  <script type="text/javascript">
+    function sendMail() {
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var email = document.getElementById("email").value;
+      var note = document.getElementById("note").value;
+      var templateParams = {
+        name,
+        phone,
+        email,
+        note
+      };
+      var notify = $("#notify").text();
+      if (!name) {
+        alert("Vui lòng nhập tên của bạn");
+      } else if (!phone) {
+        alert("Vui lòng nhập số điện thoại của bạn");
+      } else if (!email) {
+        alert("Vui lòng nhập email của bạn");
+      } else if (!note) {
+        alert("Vui lòng nhập thời gian dự kiến tổ chức tiệc cưới");
+      } else if (notify) {
+        alert("Vui lòng kiểm tra lại email và số điện thoại của bạn");
+      } else
+        emailjs.send('gmail', 'template_PdNCBcMB', templateParams)
+          .then(function (response) {
+            alert("Bạn đã đăng ký thành công, chúng tôi sẽ sớm liên hệ với bạn");
+            location.reload();
+          }, function (error) {
+            alert("bạn đã đăng ký thất bại, vui lòng thử lại");
+            location.reload();
+          });
+    }
+  </script>
 </body>
 
 </html>
