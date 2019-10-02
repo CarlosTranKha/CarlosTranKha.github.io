@@ -321,10 +321,10 @@
         emailjs.send('gmail', 'template_m4Wx8CuC', templateParams)
           .then(function (response) {
             alert("Bạn đã đăng ký thành công, chúng tôi sẽ sớm liên hệ với bạn");
-            // location.reload();
+            location.reload();
           }, function (error) {
             alert("bạn đã đăng ký thất bại, vui lòng thử lại");
-            // location.reload();
+            location.reload();
           });
       }
     }
