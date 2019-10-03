@@ -244,10 +244,6 @@ header .top .nav a:hover, header .top .nav a.active {
   margin-top: 30px;
 }
 
-.content-3 .form .btn:hover {
-  opacity: 0.8;
-}
-
 .content-3 .form .btn::before {
   content: "";
   position: absolute;
@@ -313,3 +309,11 @@ footer .text-center small {
   margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
