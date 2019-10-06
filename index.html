@@ -28,8 +28,7 @@
       emailjs.init("user_A3MTF2MMzd6nnG1kbxxck");
     })();
   </script>
-  <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-761610089/W6raCPq1sK0BEOn-lOsC', 'event_callback': callback }); return false; } </script>
- </head>
+   </head>
 
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5QDRBT" height="0" width="0"
@@ -592,7 +591,9 @@
         $("#myModal").modal();
         $("#iframe-ads").contents().find("head").html('<script async src="https://www.googletagmanager.com/gtag/js?id=AW-761610089"><\/script>');
         $("#iframe-ads").contents().find("head").append("<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-761610089');<\/script>");
+        $("#iframe-ads").contents().find("body").append("<script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-761610089/W6raCPq1sK0BEOn-lOsC', 'event_callback': callback }); return false; } <\/script>");
         $("#iframe-ads").contents().find("body").append("<script> window.onload = function(){gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');};<\/script>");
+       
        // gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');
         // gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');
             // location.reload();
