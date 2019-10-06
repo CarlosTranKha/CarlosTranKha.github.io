@@ -10,8 +10,6 @@
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-K5QDRBT');</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-761610089"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-761610089'); </script>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -434,6 +432,9 @@
         </div>
       </div>
     </div>
+    <iframe height="0" width="0"
+      style="display:none;visibility:hidden">
+    </iframe>
   </div>
 
   <!-- Optional JavaScript -->
@@ -587,18 +588,22 @@
       } else if (notify) {
         alert("Vui lòng kiểm tra lại email và số điện thoại của bạn");
       } else {
-        alert("Bạn đã đăng ký thành công, chúng tôi sẽ sớm liên hệ với bạn")
-        emailjs.send("gmail", "template_m4Wx8CuC", templateParams).then(
-          function (response) {
-            $("#myModal").modal();
-            gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');
-            location.reload();
-          },
-          function (error) {
-            alert("bạn đã đăng ký thất bại, vui lòng thử lại");
-            location.reload();
-          }
-        );
+        // alert("Bạn đã đăng ký thành công, chúng tôi sẽ sớm liên hệ với bạn");
+        $("#myModal").modal();
+        $("#myModal").contents().find('head').html('<script async src="https://www.googletagmanager.com/gtag/js?id=AW-761610089">');
+        // gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');
+            // location.reload();
+        // emailjs.send("gmail", "template_m4Wx8CuC", templateParams).then(
+        //   function (response) {
+        //     $("#myModal").modal();
+        //     gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');
+        //     location.reload();
+        //   },
+        //   function (error) {
+        //     alert("bạn đã đăng ký thất bại, vui lòng thử lại");
+        //     location.reload();
+        //   }
+        // );
       }
     }
   </script>
