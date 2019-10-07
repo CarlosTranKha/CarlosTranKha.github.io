@@ -604,6 +604,25 @@ footer .text-center small {
 .bar-icon {
   display: none;
 }
+#fixedRegister {
+  position: fixed;
+  z-index: 99;
+  bottom: 30px;
+  right: 30px;
+  width: 200px;
+  cursor: pointer;
+}
+#fixedRegister a {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  background: rgb( 227, 85, 0, .7 );
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .content-1 {
     padding-top: 20px;
@@ -630,6 +649,9 @@ footer .text-center small {
   }
   .content-2 .arrow {
     margin-top: 20px;
+  }
+  .content-1 h2 strong {
+    display: block;
   }
   .content-2 .info h5 {
     text-transform: inherit;
@@ -674,5 +696,12 @@ footer .text-center small {
   }
   .view-menu {
     display: flex;
+  }
+  .phone-support > a {
+    display: none;
+  }
+  #fixedRegister {
+    right: 10px;
+    width: 150px;
   }
 }

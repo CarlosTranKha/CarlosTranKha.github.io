@@ -19,6 +19,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="css/phonering.css">
   <link rel="stylesheet" href="css/style.css" />
 
   <title>Capella - Gallery Hall</title>
@@ -429,8 +430,9 @@
         <div class="main-content">
           <h1 class="site-header__title" data-lead-id="site-header-title">Cám ơn!</h1>
           <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
-          <p class="main-content__body" data-lead-id="main-content-body">Cám ơn bạn đã cung cấp thông tin. Chúng thôi sẽ
-            sớm liên hệ với bạn. Chúc bạn một ngày tốt lành</p>
+          <p class="main-content__body" data-lead-id="main-content-body">Capella Gallery Hall cảm ơn quý khách đã đăng
+            ký thông tin. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất.
+            Chúc quý khách một ngày tốt lành!</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
@@ -439,6 +441,29 @@
     </div>
     <iframe height="0" width="0" id="iframe-ads" style="display:none;visibility:hidden">
     </iframe>
+  </div>
+  <div id="fixedRegister"> <a role="button"> Đăng ký ngay </a></div>
+  <div class="phone-support">
+    <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon"
+      style="left: -50px; bottom: 150px; position: fixed;">
+      <div class="phonering-alo-ph-circle"></div>
+      <div class="phonering-alo-ph-circle-fill"></div>
+      <a href="tel:+84972047788"></a>
+      <div class="phonering-alo-ph-img-circle">
+        <a href="tel:+84972047788"></a>
+        <a href="tel:+84972047788" class="pps-btn-img " title="Liên hệ">
+          <img src="https://i.imgur.com/v8TniL3.png" alt="Liên hệ" width="50"
+            onmouseover="this.src='https://i.imgur.com/v8TniL3.png';"
+            onmouseout="this.src='https://i.imgur.com/v8TniL3.png';">
+        </a>
+      </div>
+    </div>
+    <a href="tel:+84972047788">
+      <span
+        style="left: 90px; bottom: 30px; position: fixed; background-color: #eb8446; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 20px; z-index: 10000;">
+        <strong>0972 04 77 88</strong>
+      </span>
+    </a>
   </div>
 
   <!-- Optional JavaScript -->
@@ -520,6 +545,14 @@
       );
     });
     $("#dangky").click(function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("#to-dattiec").offset().top - 250
+        },
+        2000
+      );
+    });
+    $("#fixedRegister").click(function () {
       $("html, body").animate(
         {
           scrollTop: $("#to-dattiec").offset().top - 250
