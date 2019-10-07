@@ -613,6 +613,9 @@ footer .text-center small {
 .content-1 small ul {
   list-style-type: none;
 }
+.bar-icon {
+  display: none;
+}
 @media (max-width: 768px) {
   .content-1 h2 {
     margin-top: 10px;
@@ -648,5 +651,25 @@ footer .text-center small {
   footer {
     margin-top: 10px;
     padding-top: 30px;
+  }
+  header .top {
+    padding: 0;
+  }
+  header .top img {
+    width: 30%;
+  }
+  .nav-custom-mobile {
+    display: none;
+  }
+  .bar-icon {
+    display: block;
+    float: right;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .view-menu {
+    display: flex;
   }
 }
