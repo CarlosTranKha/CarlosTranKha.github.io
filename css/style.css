@@ -646,6 +646,8 @@ footer .text-center small {
   }
   .content-4 p {
     text-align: justify !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   footer {
     margin-top: 10px;
