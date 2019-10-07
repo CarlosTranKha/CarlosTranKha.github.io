@@ -632,7 +632,7 @@ footer .text-center small {
     margin-top: 20px;
   }
   .content-2 .info h5 {
-    text-align: justify;
+    text-transform: inherit;
   }
   .content-3 {
     padding-top: 40px;
