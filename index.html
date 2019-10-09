@@ -632,6 +632,7 @@
             $("#iframe-ads").contents().find("body").html("<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-761610089');console.log('sdasd')<\/script>");
             $("#iframe-ads").contents().find("body").append("<script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-761610089/W6raCPq1sK0BEOn-lOsC', 'event_callback': callback }); return false; } <\/script>");
             $("#iframe-ads").contents().find("body").append("<script> window.onload = function(){gtag_report_conversion('https://capellagallery.com/tieccuoigiammottrieu');};<\/script>");
+            $("#iframe-ads").contents().find("body").append("<script>(function(w,d,o,u,r){w['ADBROTagObject']=r;w[r]=w[r]||function(){(w[r].q = w[r].q || []).push(arguments)};a=d.createElement(o),m=d.getElementsByTagName(o)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m);})(window, document, 'script', '//cdn.adbro.me/atag.js', 'atag');atag('config', 'eyJDYW1wYWlnbnMiOls0MzZdfQ==');atag('send', 'conversion');<\/script>");
           },
           function (error) {
             alert("bạn đã đăng ký thất bại, vui lòng thử lại");
@@ -648,6 +649,17 @@
         $("#main-menu").toggleClass("view-menu");
       });
     });
+  </script>
+
+  <script type="text/javascript">
+    (function (w, d, o, u, r) {
+    w['ADBROTagObject'] = r; w[r] = w[r] || function () { (w[r].q = w[r].q || []).push(arguments) };
+      a = d.createElement(o), m = d.getElementsByTagName(o)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m);
+    })
+      (window, document, 'script', '//cdn.adbro.me/atag.js', 'atag');
+    atag('config', 'eyJDYW1wYWlnbnMiOls0MzZdfQ==');
+
+    atag('send', 'pageview');
   </script>
 </body>
 
